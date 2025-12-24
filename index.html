@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Thatix Restaurant</title>
+  </head>
+  <body>
+    <!-- Loading Spinner -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+    </div>
+
+    <header>
+      <h1>
+        Search Your <br />
+        Favorite Recipe
+      </h1>
+      <p>
+        A handful of simple ingredients typify the fresh, vibrant <br />
+        flavors of Greek cooking
+      </p>
+    </header>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button onclick="searchRecipes()">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 40px; font-size: 35px">
+      Latest Recipes
+    </h2>
+    <div class="recipes" id="recipeList"></div>
+
+    <div class="popup" id="popup"></div>
+
+    <!-- ⬆ Scroll To Top -->
+    <button onclick="scrollToTop()" id="scrollTopBtn">↑</button>
+
+    <footer>
+      <div class="footer-left">&copy; 2025 - All rights reserved.</div>
+      <div class="footer-right">
+        <a href="https://x.com" target="_blank" aria-label="X.com">
+          <img
+            src="https://img.icons8.com/ios-filled/30/ffffff/twitterx--v1.png"
+            alt="X"
+          />
+        </a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+          <img
+            src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png"
+            alt="YouTube"
+          />
+        </a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img
+            src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"
+            alt="Facebook"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
